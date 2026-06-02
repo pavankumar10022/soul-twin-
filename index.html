@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Soul Twin 💙</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#87CEEB,#1E3A8A);
+    overflow-x:hidden;
+    color:white;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    animation: glow 2s infinite alternate;
+}
+
+.hero h2{
+    font-size:1.5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:800px;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px white;
+    }
+    to{
+        text-shadow:0 0 25px #ffffff;
+    }
+}
+
+.section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:30px;
+    font-size:2.5rem;
+}
+
+.slider{
+    width:90%;
+    max-width:900px;
+    height:550px;
+    margin:auto;
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(255,255,255,.4);
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition:1.5s;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.slide.active{
+    opacity:1;
+}
+
+.message{
+    max-width:900px;
+    margin:auto;
+    font-size:1.2rem;
+    line-height:2;
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(10px);
+    padding:40px;
+    border-radius:20px;
+}
+
+.quote{
+    font-size:1.4rem;
+    margin:20px 0;
+    font-style:italic;
+}
+
+.music-box{
+    margin-top:30px;
+}
+
+button{
+    padding:12px 24px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#1E3A8A;
+    font-weight:bold;
+    cursor:pointer;
+    margin:10px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    font-size:1.1rem;
+}
+
+.heart{
+    position:fixed;
+    top:-10px;
+    color:white;
+    animation:fall linear infinite;
+    z-index:999;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+    }
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.slider{
+    height:400px;
+}
+
+.message{
+    padding:20px;
+    font-size:1rem;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <h1>🎂 Happy Birthday Soul Twin 💙</h1>
+
+    <h2>To My Favorite Cousin, My Best Friend & My Soul Twin</h2>
+
+    <p>
+        Today is all about celebrating the wonderful person you are.
+        Thank you for being a part of my life, for every smile,
+        every memory, and every moment we have shared together.
+    </p>
+</div>
+
+<section class="section">
+
+<h2>📸 Our Beautiful Memories</h2>
+
+<div class="slider">
+
+<div class="slide active">
+<img src="photo1.jpg">
+</div>
+
+<div class="slide">
+<img src="photo2.jpg">
+</div>
+
+<div class="slide">
+<img src="photo3.jpg">
+</div>
+
+<div class="slide">
+<img src="photo4.jpg">
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>💌 Birthday Message</h2>
+
+<div class="message">
+
+<p>
+Happy Birthday, Soul Twin! 💙
+</p>
+
+<br>
+
+<p>
+You are more than a cousin —
+you are my best friend,
+my partner in soul,
+and one of the most special people in my life.
+</p>
+
+<br>
+
+<p>
+Thank you for all the laughter,
+the support,
+the unforgettable memories,
+and the happiness you bring wherever you go.
+</p>
+
+<br>
+
+<p>
+On your special day,
+I wish you good health,
+endless happiness,
+success in everything you do,
+and a future filled with beautiful moments.
+</p>
+
+<br>
+
+<p>
+May your smile always shine as brightly as the sky,
+and may every dream in your heart come true.
+</p>
+
+<br>
+
+<p>
+Have a wonderful birthday
+and an amazing year ahead. 💙
+</p>
+
+<br>
+
+<p>
+With lots of love,<br>
+Your Soul Twin 💙
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>✨ Special Quotes ✨</h2>
+
+<div class="quote">
+"Some people are cousins by blood,
+but soul twins by heart." 💙
+</div>
+
+<div class="quote">
+"Life becomes beautiful when shared with someone who understands your soul."
+</div>
+
+<div class="quote">
+"True friendship is a blessing,
+and having a soul twin is priceless."
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>🎵 Birthday Music</h2>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+
+<button onclick="playMusic()">
+▶ Play Music
+</button>
+
+<button onclick="pauseMusic()">
+⏸ Pause Music
+</button>
+
+</div>
+
+</section>
+
+<footer>
+💙 Happy Birthday Soul Twin 💙<br>
+May your life always be filled with happiness, health and love.
+</footer>
+
+<script>
+
+let slides=document.querySelectorAll('.slide');
+let current=0;
+
+function nextSlide(){
+
+slides[current].classList.remove('active');
+
+current++;
+
+if(current>=slides.length){
+current=0;
+}
+
+slides[current].classList.add('active');
+}
+
+setInterval(nextSlide,3500);
+
+function playMusic(){
+document.getElementById("bgMusic").play();
+}
+
+function pauseMusic(){
+document.getElementById("bgMusic").pause();
+}
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="💙";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(Math.random()*20+15)+"px";
+
+heart.style.animationDuration=
+(Math.random()*5+5)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},10000);
+}
+
+setInterval(createHeart,400);
+
+</script>
+
+</body>
+</html>
